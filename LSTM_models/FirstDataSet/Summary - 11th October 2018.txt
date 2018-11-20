@@ -1,0 +1,54 @@
+1. Try without last 3 features (Models V11 - V16)
+V11
+[0.43051456567869023, 0.8252408477612313]
+
+V12
+[0.4213777118795881, 0.8428874733571816]
+
+V13
+[0.28385773444393925, 0.8973025048169557]
+
+V14 Normalisation + Split + Window_size = 10 (No overfitting)
+[0.25431860645024995, 0.9070762052877138]
+
+V15
+[0.23091620042319005, 0.9133371935114394]
+
+V16
+[0.12317600083562022, 0.9529548988186552]
+
+V17 - Base Model on V14
+a. Normalisation + Split + Window_size = 10 (No overfitting)
+    [0.25431860645024995, 0.9070762052877138]
+    hidden_dim = 64;
+    epochs = 200;
+    batch_size = 100;
+
+b. Normalisation + Split + Window_size = 5 (No overfitting)
+    [0.30284018530787044, 0.8763305593302892]
+    hidden_dim = 128;
+    epochs = 250;
+    batch_size = 100;
+    
+
+c. Normalisation + Split + Window_size = 3
+    [0.3562637006100112, 0.8632412594972441]
+    hidden_dim = 128;
+    epochs = 250;
+    batch_size = 100;
+    
+    
+e. Normalisation + Split + Window_size = 3 <TODO>
+    hidden_dim = 128;
+    epochs = 250;
+    batch_size = 100;
+    
+    Add dense layers? 4, 8, 16, 32, 64, 128?
+    
+
+************************************************************************
+
+2. Try Simpler models - Hidden Markov, Naive Bayes, Logistic Regression?
+
+
+
