@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{Identifying cross country skiing techniques using power meters in skipoles --- or something}
+\author{The Author}
+%\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+\abstract{
+Power meters are becoming a popular tool to measure training and racing effort in sports like cycling, and are now spreading also to other sports. 
+This means that increasing volumes of data can be collected from athletes, with the aim of e.g. understanding training load, racing efforts, technique etc.
+In this project we have collaborated with Skisense AB, a company producing power meters attached to handles for cross country ski poles.   
+We have conducted a pilot study in the use of machine learning techniques on data from Skisense skipoles to identify which "gear" a skiier is using, based only on the data from the skipoles. 
+}
+
+
+\section{Introduction}
+Motivation of the project, background.
+Literature: Describe briefly what other people have done in the area of ML and identifying cross country skiing techniques in particular, and also in identifying human movement more generally (which sensors used, which ML techniques). Also explain how our work differ (e.g. we use different sensors, in the skipoles rather than accelerometers attached to the body). 
+%\subsection{}
+
+\section{Background}:
+\subsection{Cross country skiing techniques}
+We should briefly explain what the different gears are, perhaps including some pictures.
+
+\subsection{Machine Learning techniques}
+Briefly give an overview of the machine learning techniques we've used (LSTM vs CNN). It does not need to be super technical, more of a brief introduction to someone who reads the report with more of a background in say ski coaching. 
+
+\section{The Data}
+Explain a little bit more about the data, e.g. what the poles collect measurements from (power, accelerometers...), at what frequency etc. 
+Explain the datasets that we used, e.g. from X skiers, Y runs in each gear for skier x... 
+Here it might also be suitable to briefly emphasise that this is really a pilot study, and for a real study we'd need many more subjects.
+
+\section{Machine Learning Models}
+Describe the different machine learning models we've experimented with. Give brief motivations as to why these were chosen.
+
+\section{Evaluation/Results}
+Summarise the results from all the experiments.
+
+\section{Discussion/Conclusions}
+What are our conclusions based on the experimnetal results? Which model(s) performed the best? Under which parameters? How long did they take to train? 
+
+Also, e.g. when we train/test on the same skier the results are better because they presumably ski similarly and the models learns their particular technique. Compare to training model on experienced skiers and testing on inexperienced. Or training on e.g. Dan and testing on Johan (both experienced). 
+
+Finally, give some suggestions as to which model should be tested should we be able to do a full scale study with more people at some point.
+
+\section{Related Work}
+Compare our work in more detail to that of other similar studies.
+
+\section{Summary}
+Summarises report.
+
+\end{document}  
